@@ -10,4 +10,4 @@ Route::get('/', function () {
 
 Route::get('/description', function (){
     return view('description-card');
-})->name('description-card');
+})->name('comics');

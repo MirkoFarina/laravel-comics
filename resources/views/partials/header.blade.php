@@ -11,7 +11,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">
+                    <a href="{{ url('/') }}" class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">
                         comics
                     </a>
                 </li>
