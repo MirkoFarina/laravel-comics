@@ -1,1 +1,11 @@
-//@import '~bootstrap/scss/bootstrap'
+// SCSS GENERAL
+@use "./partials/general";
+
+
+// SCSS HEADER
+@use "./partials/header";
+
+// SCSS COMICS PAGE
+@use "./partials/comics";
+
+
