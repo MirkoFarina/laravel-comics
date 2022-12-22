@@ -40,7 +40,7 @@
                     <li>
                         <div class="img">
                             <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}"
-                            :alt="">
+                            alt="">
                         </div>
                         <a href="#">
                             DIGITAL COMICS
@@ -49,7 +49,7 @@
                     <li>
                         <div class="img">
                             <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}"
-                            :alt="">
+                            alt="">
                         </div>
                         <a href="#">
                             dc merchandise
@@ -58,7 +58,7 @@
                     <li>
                         <div class="img">
                             <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}"
-                            :alt="">
+                            alt="">
                         </div>
                         <a href="#">
                             subscription
@@ -67,7 +67,7 @@
                     <li>
                         <div class="img">
                             <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}"
-                            :alt="">
+                            alt="">
                         </div>
                         <a href="#">
                             comic shop locator
@@ -76,7 +76,7 @@
                     <li>
                         <div class="img">
                             <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}"
-                            :alt="">
+                            alt="">
                         </div>
                         <a href="#">
                             DIGITAL COMICS

@@ -2,12 +2,6 @@
 @use "./variables" as *;
 
 
-.jumbotron {
-    height: 400px;
-    background-image: url("../img/jumbotron.jpg");
-    background-size: cover;
-}
-
 section {
     background-color: #1c1c1c;
     padding-bottom: 40px;

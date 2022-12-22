@@ -1,2 +1,146 @@
 @use "./mixins" as *;
 @use "./variables" as *;
+
+main#description-card {
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .line {
+        background-color: $primary-color;
+        height: 80px;
+    }
+    .container-img {
+        transform: translateY(-80%);
+        display: inline-block;
+        border: 1px solid white;
+        img {
+            position: relative;
+        }
+    }
+    span.type,
+    span.gallery {
+        position: absolute;
+        color: white;
+        background-color: lighten($primary-color, 15%);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+    .type {
+        top: 1px;
+        left: 1px;
+        padding: 0 5px;
+    }
+    .gallery {
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .adv {
+        display: flex;
+        padding: 40px 0;
+        margin-bottom: 50px;
+
+        .col-left {
+            width: 70%;
+            padding-right: 20px;
+            .price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                height: 50px;
+                background-color: #55ba59;
+                border-bottom: 1px solid #357739;
+                margin-bottom: 30px;
+                h5 {
+                    color: #baf980;
+                }
+                span,
+                .right h5 {
+                    color: white;
+                }
+                .left {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 20px;
+                }
+                .right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30%;
+                    border-left: 1px solid #357739;
+                    height: 100%;
+                }
+            }
+        }
+        .col-right {
+            width: 30%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.specifications {
+    background-color: #f6f6f6;
+    .content-specifications {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+    h3 {
+        padding: 40px 0;
+    }
+    .left {
+        width: 45%;
+    }
+    .right {
+        width: 45%;
+    }
+    .talent-impagination {
+        display: flex;
+        padding: 10px 0;
+        border-top: 1px solid lightgray;
+        &:last-child {
+            border-bottom: 1px solid lightgray;
+        }
+        .title {
+            width: 30%;
+        }
+        .content {
+            width: 70%;
+        }
+    }
+}
+.nav-bar-description {
+    border-top: 1px solid lightgray;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: calc(100% / 4);
+            padding: 0 10px;
+            border-left: 1px solid lightgray;
+        }
+        h6 {
+            color: gray;
+            text-transform: uppercase;
+            font-size: .8rem;
+        }
+        .go-to {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            img {
+                filter: invert(.2);
+                width: 50px;
+            }
+        }
+    }
+}
