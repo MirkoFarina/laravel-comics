@@ -10,6 +10,10 @@ footer {
     .container {
         @include centerFlex("vertical");
         align-items: flex-start;
+        p {
+            color: #959595;
+            font-size: 0.8rem;
+        }
         h4 {
             text-transform: uppercase;
             font-weight: 800;

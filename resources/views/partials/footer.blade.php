@@ -132,6 +132,11 @@
             </nav>
         </div>
     </div>
+    <div class="container">
+        <p>
+            All site Content TM and 2020 DC Entertaiment, unless otherwise <a href="#">noted here</a>. All rights reserved. <br> <a href="#">Cookies Settings</a>
+        </p>
+    </div>
     <div class="background-layer">
         <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
     </div>
