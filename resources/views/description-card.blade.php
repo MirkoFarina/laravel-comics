@@ -18,6 +18,7 @@
             </div>
         </div>
         <div class="container">
+            <!-- SECTION ADV -->
             <div class="adv">
                 <div class="col-left">
                     <h2>
@@ -53,7 +54,9 @@
                     <img src=" {{ Vite::asset('resources/img/adv.jpg') }} " alt="ADV">
                 </div>
             </div>
+            <!-- /SECTION ADV -->
         </div>
+        <!-- SECTION SPECIFICATIONS -->
         <div class="specifications">
             <div class="container">
                 <div class="content-specifications">
@@ -172,5 +175,6 @@
                 </div>
             </nav>
         </div>
+        <!-- /SECTION SPECIFICATIONS -->
     </main>
 @endsection
