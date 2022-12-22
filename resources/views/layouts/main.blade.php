@@ -14,14 +14,15 @@
     <!-- HEADER -->
     @include('partials.header')
 
+    <!-- JUMBOTRON -->
+    @include('partials.jumbotron')
+
 
     <!-- CONTENT PAGE -->
-
     @yield('content')
 
 
     <!-- FOOTER -->
-
     @include('partials.footer')
 </body>
 </html>

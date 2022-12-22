@@ -4,7 +4,7 @@
 
 @section('content')
     <main>
-        <div class="jumbotron"></div>
+
         <section>
             <div class="container">
                 <h2 class="rectangle">CURRENT SERIES</h2>

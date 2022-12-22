@@ -4,12 +4,21 @@
 
 // SCSS HEADER
 @use "./partials/header";
+// /SCSS HEADER
+
 
 // SCSS COMICS PAGE
 @use "./partials/comics";
 
+// SCSS DESCRIPTION-CARD
+@use "./partials/description-card";
+// /SCSS DESCRIPTION-CARD
+
+// /SCSS COMICS PAGE
+
 
 // SCSS FOOTER
 @use "./partials/footer";
+// /SCSS FOOTER
 
 
