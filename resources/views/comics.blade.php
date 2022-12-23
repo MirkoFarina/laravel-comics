@@ -4,28 +4,27 @@
 
 @section('content')
     <main>
-
         <section>
             <div class="container">
                 <h2 class="rectangle">CURRENT SERIES</h2>
                 <div class="row">
-                    <div class="card">
-                        <a href="{{ url('/description') }}">
-                            <div class="top">
-                                <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                                    alt="Action Comics" />
-                                <div class="content">
-                                    <h5>PREZZO: $19.99</h5>
+                    @foreach ($comics as $comic)
+                        <div class="card">
+                            <a href="{{ url('/description') }}">
+                                <div class="top">
+                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
+                                    <div class="content">
+                                        <h5>PREZZO: {{ $comic['price'] }}</h5>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bottom">
-                                <h3>
-                                    Action Comics
-                                </h3>
-                            </div>
-                        </a>
-                    </div>
-
+                                <div class="bottom">
+                                    <h3>
+                                        {{ $comic['title'] }}
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
             <div class="load-more">
@@ -39,8 +38,7 @@
                 <ul>
                     <li>
                         <div class="img">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}"
-                            alt="">
+                            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
                         </div>
                         <a href="#">
                             DIGITAL COMICS
@@ -48,8 +46,7 @@
                     </li>
                     <li>
                         <div class="img">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}"
-                            alt="">
+                            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
                         </div>
                         <a href="#">
                             dc merchandise
@@ -57,8 +54,7 @@
                     </li>
                     <li>
                         <div class="img">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}"
-                            alt="">
+                            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
                         </div>
                         <a href="#">
                             subscription
@@ -66,8 +62,7 @@
                     </li>
                     <li>
                         <div class="img">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}"
-                            alt="">
+                            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
                         </div>
                         <a href="#">
                             comic shop locator
@@ -75,8 +70,7 @@
                     </li>
                     <li>
                         <div class="img">
-                            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}"
-                            alt="">
+                            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
                         </div>
                         <a href="#">
                             DIGITAL COMICS
