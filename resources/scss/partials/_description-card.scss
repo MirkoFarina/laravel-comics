@@ -27,8 +27,8 @@ main#description-card {
         font-size: 0.8rem;
     }
     .type {
-        top: 1px;
-        left: 1px;
+        top: 0;
+        left: 0;
         padding: 0 5px;
     }
     .gallery {
@@ -114,6 +114,14 @@ main#description-card {
         }
         .content {
             width: 70%;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    font-size: .9rem;
+                    padding-left: 10px;
+                }
+            }
         }
     }
 }

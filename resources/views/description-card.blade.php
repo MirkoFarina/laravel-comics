@@ -6,13 +6,13 @@
         <div class="line">
             <div class="container">
                 <div class="container-img">
-                    <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                        alt=" img">
+                    <img src="{{ $comic['thumb'] }}"
+                        alt=" {{ $comic['title'] }}">
                     <span class="type">
-                        COMIC BOOK
+                        {{ $comic['series'] }}
                     </span>
                     <span class="gallery">
-                        view gallery
+                        VIEW GALLERY
                     </span>
                 </div>
             </div>
@@ -22,12 +22,12 @@
             <div class="adv">
                 <div class="col-left">
                     <h2>
-                        action comics #1000: the deluxe edition
+                        {{ $comic['title'] }}
                     </h2>
                     <div class="price">
                         <div class="left">
                             <h5>
-                                U.S. Price: <span>$19.99</span>
+                                U.S. Price: <span>{{$comic['price']}}</span>
                             </h5>
                             <h5>
                                 AVAILABLE
@@ -40,14 +40,7 @@
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla commodi sit nemo mollitia tenetur
-                        harum ipsum in neque beatae provident at nesciunt distinctio aliquam, repellat, magni quis unde
-                        veritatis a fuga tempora non explicabo quaerat architecto sint. Suscipit ea odio praesentium ab rem
-                        numquam animi similique sit ipsum? Blanditiis beatae dignissimos hic eum reprehenderit iste optio
-                        autem placeat sed, rerum natus totam eius assumenda culpa? Natus consectetur maxime expedita magni
-                        praesentium repellendus perferendis culpa earum aperiam nesciunt nobis nemo beatae eos, ipsa,
-                        recusandae quasi commodi neque facilis at iure esse itaque id dignissimos. Nihil distinctio
-                        obcaecati aliquid expedita autem sapiente!
+                        {!!  $comic['description']  !!}
                     </p>
                 </div>
                 <div class="col-right">
@@ -69,9 +62,16 @@
                                 <h5>Art by:</h5>
                             </div>
                             <div class="content">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos tempore, voluptatum
-                                quia consequatur soluta porro. Vero facere cumque nemo rerum, amet officia delectus at quo!
-                                Dolorum quasi alias labore tempore!
+                                <ul>
+                                    @foreach ($comic['artists'] as $artist )
+                                    <li>
+                                        <a href="#">
+                                            {{$artist}} ,
+                                        </a>
+                                    </li>
+
+                                    @endforeach
+                                </ul>
                             </div>
                         </div>
                         <div class="talent-impagination">
@@ -79,9 +79,16 @@
                                 <h5>written by:</h5>
                             </div>
                             <div class="content">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos tempore, voluptatum
-                                quia consequatur soluta porro. Vero facere cumque nemo rerum, amet officia delectus at quo!
-                                Dolorum quasi alias labore tempore!
+                                <ul>
+                                    @foreach ($comic['writers'] as $writer )
+
+                                    <li>
+                                        <a href="#">
+                                            {{$writer}} ,
+                                        </a>
+                                    </li>
+                                    @endforeach
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -94,7 +101,7 @@
                                 <h5>Series:</h5>
                             </div>
                             <div class="content">
-                                Lorem ipsum
+                                {{ $comic['series'] }}
                             </div>
                         </div>
                         <div class="talent-impagination">
@@ -102,7 +109,7 @@
                                 <h5>U.S. price:</h5>
                             </div>
                             <div class="content">
-                                Lorem ipsum
+                                {{ $comic['price']}}
                             </div>
                         </div>
                         <div class="talent-impagination">
@@ -110,7 +117,7 @@
                                 <h5>On sale date:</h5>
                             </div>
                             <div class="content">
-                                Lorem ipsum
+                                {{ $comic['sale_date']}}
                             </div>
                         </div>
                     </div>

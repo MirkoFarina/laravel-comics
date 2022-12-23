@@ -10,7 +10,7 @@
                 <div class="row">
                     @foreach ($comics as $comic)
                         <div class="card">
-                            <a href="{{ url('/description') }}">
+                            <a href="{{route('description', ['id' => $comic['id']])}}">
                                 <div class="top">
                                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
                                     <div class="content">
